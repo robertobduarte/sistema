@@ -1,6 +1,0 @@
-<?php
-
-define('APP', "sistema/");
-
-
-?>

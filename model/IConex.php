@@ -8,7 +8,7 @@ interface IConex{
 	const DB_USER = "root";
 	const DB_PASS = "";
 	const DB_PORT = "3306";
-$ = 1;
+$ = 2;
 	public function doConnect();
 	
 }
