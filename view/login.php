@@ -1,11 +1,11 @@
 <?php
 include_once __DIR__ . "/../config.php";
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/' . APP . "model/session.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/' . APP . "model/Conex.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/' . APP . "model/Session.php";
 $session = new session();
 
-
-$_SESSION['usuario'] = 'Roberto';
+$session->setValue( 'usuario', 'Roberto' );
 
 header('Location:home.php');
 

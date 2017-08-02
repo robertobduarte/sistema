@@ -1,6 +1,6 @@
 <?php
 
-class session{
+class Session{
 
 	private $session_id;
 
@@ -31,6 +31,13 @@ class session{
 
 			return false;
 		}		
+	}
+
+
+	public function setValue( $chave, $value ){
+
+		$_SESSION[$this->session_id][$chave] = $value;
+	
 	}
 
 
